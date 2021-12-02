@@ -4,6 +4,10 @@ An app I made while learning Flutter that shows a random Steve Jobs quote on eve
 
 ## Used technologies
 - Dart
+## Screenshots
+- <img align="center" width="300" height="600" src="screenshots/homepage1.png">
+
+- <img align="center" width="300" height="600" src="screenshots/homepage2.png">
 
 ## Contributing
 Pull requests are welcome. Please tell me my mistake while correcting my mistakes.

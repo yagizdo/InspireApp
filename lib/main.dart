@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Inspire App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Inspire App'),
     );
   }
 }
@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
     'Innovation distinguishes between a leader and a follower.',
     'Design is not just what it looks like and feels like. Design is how it works.'
   ];
-  String text = '';
+  String text = 'Click Button';
   @override
   Widget build(BuildContext context) {
     var screenInfo = MediaQuery.of(context);
@@ -57,7 +57,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
         appBar: AppBar(
-          title: Text(widget.title),
+          title: Text(
+            widget.title,
+            style: TextStyle(color: Colors.white),
+          ),
         ),
         body: Center(
           child: Column(
@@ -94,9 +97,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: () {
                         setState(() {
                           int number = rnd.nextInt(quotes.length);
-                          String test = quotes[number];
+                          text = quotes[number];
 
-                          text = '$test';
+                          text = '$text';
                         });
                       },
                       child: Text('Inspire')),
